@@ -6,31 +6,31 @@ import {
   Link
 } from "react-router-dom";
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {ProfilePage} from "./pages/profilePage";
 
 function App() {
   return (
       <BrowserRouter>
-        <div>
+        <div className={'app-container'}>
           <nav>
             <ul>
               <li>
                 <Link to="/">Home</Link>
               </li>
               <li>
-                <Link to="/about">About</Link>
+                <Link to="/profile">Profile</Link>
               </li>
               <li>
-                <Link to="/users">Users</Link>
+                <Link to="/report">Users</Link>
               </li>
             </ul>
           </nav>
 
-          {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
           <Routes>
             <Route path="/" element={<Home/>}/>
-            <Route path="/about" element={<About/>}/>
-            <Route path="/users" element={<Users/>}/>
+            <Route path="/profile" element={<ProfilePage/>}/>
+            <Route path="/report" element={<Users/>}/>
           </Routes>
         </div>
       </BrowserRouter>
