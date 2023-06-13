@@ -353,4 +353,9 @@ MigrationBackup/
 #MacOs files
 .DS_Store
 
-.idea/
+.idea/!/api/.env
+/.idea/.gitignore
+/.idea/hackers-fit.iml
+/.idea/jsLibraryMappings.xml
+/.idea/modules.xml
+/.idea/vcs.xml
